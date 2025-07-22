@@ -21,8 +21,8 @@ label start:
 
 label scene_1:
 
-    scene bg room
-    show eileen happy
+    scene bg_throneroom_chapter1
+    show char_sigrid_normal
 
     Bard "Каждая принцесса взрослеет, и когда-нибудь ей предстоит взять на себя ответственность за государство."
 
@@ -107,8 +107,8 @@ label scene_2:
 
 label scene2_dute:
 
-    scene bg room
-    show eileen happy
+    scene bg_throneroom_chapter1
+    show char_sigrid_normal
 
     King "Хм, ты ничего не скажешь? Рыцарей все еще учат основам этикета? Или все равно, как обращаются с рыцарем, леди [main_charecter_name]?"
     GG_name "Этикет существует для людей, Ваше Величество. А вы… Вы выше этого."
@@ -121,8 +121,8 @@ label scene2_dute:
 
 label scene2_honor:
 
-    scene bg room
-    show eileen happy
+    scene bg_throneroom_chapter1
+    show char_sigrid_normal
 
     King "Хм, ты ничего не скажешь? Рыцарей все еще учат основам этикета? Или все равно, как обращаются с рыцарем, леди [main_charecter_name]?"
 
@@ -138,8 +138,8 @@ label scene2_honor:
 
 label scene2_silence:
 
-    scene bg room
-    show eileen happy
+    scene bg_throneroom_chapter1
+    show char_sigrid_normal
 
     King "Хм, ты ничего не скажешь? Рыцарей все еще учат основам этикета? Или все равно, как обращаются с рыцарем, леди [main_charecter_name]?"
 
@@ -153,8 +153,8 @@ label scene2_silence:
 
 label scene_3:
 
-    scene bg room
-    show eileen happy
+    scene bg_throneroom_chapter1
+    show char_sigrid_normal
 
     King " И так считаю не только я…"
 
