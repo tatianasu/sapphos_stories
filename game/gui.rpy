@@ -68,10 +68,10 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## Размер нормального текста диалога.
-define gui.text_size = 10
+define gui.text_size = 23
 
 ## Размер имён персонажей.
-define gui.name_text_size = 13
+define gui.name_text_size = 18
 
 ## Размер текста в пользовательском интерфейсе.
 define gui.interface_text_size = 10
@@ -98,18 +98,18 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## Эти переменные контролируют, как диалог появляется на отдельной строчке.
 
 ## Высота текстового окна, содержащего диалог.
-define gui.textbox_height = 79
+define gui.textbox_height = 0.1
 
 ## Местоположение текстового окна по вертикали экрана. 0.0 — верх, 0.5 — центр и
 ## 1.0 — низ.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.5
 
 
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
 define gui.name_xpos = 102
-define gui.name_ypos = 0
+define gui.name_ypos = -3
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
@@ -133,11 +133,11 @@ define gui.namebox_tile = False
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 114
+define gui.dialogue_xpos = 20
 define gui.dialogue_ypos = 22
 
 ## Максимальная ширина текста диалога в пикселях.
-define gui.dialogue_width = 314
+define gui.dialogue_width = 480
 
 ## Горизонтальное выравнивание текста диалога. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
@@ -379,7 +379,7 @@ define gui.nvl_list_length = 6
 
 ## Высота доступных строчек в режиме NVL. Установите на None, чтобы строчки
 ## динамически регулировали свою высоту.
-define gui.nvl_height = 49
+define gui.nvl_height = None
 
 ## Интервал между строчками в режиме NVL, если gui.nvl_height имеет значение
 ## None, а также между строчками и меню режима NVL.
@@ -393,17 +393,17 @@ define gui.nvl_name_width = 64
 define gui.nvl_name_xalign = 1.0
 
 ## Местоположение, ширина и выравнивание диалогового текста.
-define gui.nvl_text_xpos = 190
-define gui.nvl_text_ypos = 4
-define gui.nvl_text_width = 249
+define gui.nvl_text_xpos = 0.5
+define gui.nvl_text_ypos = 0.5
+define gui.nvl_text_width = 300
 define gui.nvl_text_xalign = 0.0
 
 ## Местоположение, ширина и выравнивание текста nvl_thought (текст от лица
 ## персонажа nvl_narrator).
-define gui.nvl_thought_xpos = 102
-define gui.nvl_thought_ypos = 0
-define gui.nvl_thought_width = 330
-define gui.nvl_thought_xalign = 0.0
+define gui.nvl_thought_xpos = 0.5
+define gui.nvl_thought_ypos = 0.45
+define gui.nvl_thought_width = 480
+define gui.nvl_thought_xalign = 0.5
 
 ## Местоположение кнопок меню NVL.
 define gui.nvl_button_xpos = 190

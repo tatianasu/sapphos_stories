@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Инициализация
 ################################################################################
 
@@ -135,7 +135,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox2.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -204,9 +204,14 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
+screen timerz:
+    timer 0.02 repeat True action If(timerz > 0, SetVariable("timerz", timerz - 0.02), Jump("faile_scene"))
+    bar value timerz range 5 xalign 0.5 xmaximum 50
+
 screen choice(items):
     style_prefix "choice"
-
+    if off_on == True:
+        use timerz
     vbox:
         for i in items:
             textbutton i.caption action i.action
