@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 45: positional argument follows keyword argument
-    main_charecter_name = renpy.input(default='Имя', length=20, "Введите имя героини:")
-                                                                                       ^
+File "game/screens.rpy", line 213: 'background' is not a keyword argument or valid child of the screen statement.
+    background Image("gui/button/choice_background.png", xalign=0.5, yalign=1.0)
+              ^
 
-Ren'Py Version: Ren'Py 8.3.7.25031702
-Tue Jul 22 00:22:05 2025
+Ren'Py Version: Ren'Py 8.4.0.25071206
+Sat Oct 25 20:31:47 2025

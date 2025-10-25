@@ -210,8 +210,12 @@ screen timerz:
 
 screen choice(items):
     style_prefix "choice"
+
     if off_on == True:
         use timerz
+    else:
+        frame: 
+            background Image("gui/button/choice_background.png", xalign=0.5, yalign=0.7)
     vbox:
         for i in items:
             textbutton i.caption action i.action
@@ -223,7 +227,8 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 114
+    xpos 340
+    ypos 655
     yanchor 0.5
 
     spacing gui.choice_spacing

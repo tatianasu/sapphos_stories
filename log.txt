@@ -1,34 +1,33 @@
-2025-07-22 18:05:04 UTC
+2025-10-25 19:54:10 UTC
 Windows-11-10.0.26100-SP0
 Ren'Py 8.4.0.25071206
 
-Early init took 58 ms
-Loading error handling took 32 ms
-Loading script took 160 ms
-Loading save slot metadata took 43 ms
+Early init took 50 ms
+Loading error handling took 17 ms
+Loading script took 72 ms
+Loading save slot metadata took 25 ms
 Loading persistent took 0 ms
-Running init code took 82 ms
-Loading analysis data took 11 ms
-Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 21 ms
-Backing up script files to 'C:\\Users\\kate\\AppData\\Roaming/RenPy/backups\\sapphos_stories':
-Dump and make backups took 49 ms
+Running init code took 35 ms
+Loading analysis data took 4 ms
+Analyze and compile ATL took 1 ms
+Reloading save slot metadata took 9 ms
+Dump and make backups took 30 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 106 ms
+Initial gc took 32 ms
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 9 ms
+Creating interface object took 2 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 9 ms
-Save screen analysis took 16 ms
+Load screen analysis took 13 ms
+Analyze screens took 1 ms
+Save screen analysis took 0 ms
 Save pyanalysis took 0 ms
 Save bytecode took 0 ms
-Running _start took 0 ms
-Interface start took 871 ms
+Running _start took 1 ms
+Interface start took 833 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
@@ -42,7 +41,3 @@ Screen sizes: virtual=(540, 960) physical=(2880, 1755) drawable=(2880, 1755)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(540, 960) physical=(2880, 1755) drawable=(2880, 1755)
 Maximum texture size: 4096x4096
-Cleaning stores took 0 ms
-Load screen analysis took 19 ms
-Analyze screens took 0 ms
-Running _start took 2 ms
