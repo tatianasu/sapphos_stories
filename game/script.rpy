@@ -427,7 +427,7 @@ label faile_scene:
     window hide
     pause
 
-    "Лира наклонилась и ахнула."
+    "[main_charecter_name] наклонилась и ахнула."
     nvl clear
 
     "Треснувший синий камень на шнурке"
@@ -547,7 +547,7 @@ label scene_9:
 
     Sigrid "Да что с тобой такое."
 
-    Sigrid "*вздохнула и похлопала Лиру по руке*"
+    Sigrid "*вздохнула*"
 
     Sigrid "Ты это из-за короля?"
     hide char_sigrid_thoughtful

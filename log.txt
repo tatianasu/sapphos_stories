@@ -1,38 +1,36 @@
-2025-10-26 02:31:43 UTC
+2025-10-26 19:58:38 UTC
 Windows-10-10.0.26100
 Ren'Py 8.3.7.25031702
 
-Early init took 0.08s
-Loading error handling took 0.28s
-Loading script took 4.10s
-Loading save slot metadata took 0.51s
+Early init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
- - Init at game/gui.rpy:11 took 0.28146 s.
-Running init code took 0.69s
+Running init code took 0.16s
 Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.12s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.28s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\potat\\AppData\\Roaming/RenPy/backups\\Sapphos_stories':
-Dump and make backups took 0.07s
+Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.04s
+Initial gc took 0.03s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.10s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.06s
-Save screen analysis took 0.02s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.06s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 1.31s
+Interface start took 0.27s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
@@ -42,7 +40,5 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Xe Graphics'
 Version: b'4.6.0 - Build 31.0.101.5333'
 Display Info: None
-Screen sizes: virtual=(540, 960) physical=(2880, 1659) drawable=(2880, 1659)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(540, 960) physical=(2880, 1659) drawable=(2880, 1659)
+Screen sizes: virtual=(540, 960) physical=(933, 1658) drawable=(933, 1658)
 Maximum texture size: 4096x4096
