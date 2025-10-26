@@ -1,43 +1,48 @@
-2025-10-25 19:54:10 UTC
-Windows-11-10.0.26100-SP0
-Ren'Py 8.4.0.25071206
+2025-10-26 02:31:43 UTC
+Windows-10-10.0.26100
+Ren'Py 8.3.7.25031702
 
-Early init took 50 ms
-Loading error handling took 17 ms
-Loading script took 72 ms
-Loading save slot metadata took 25 ms
-Loading persistent took 0 ms
-Running init code took 35 ms
-Loading analysis data took 4 ms
-Analyze and compile ATL took 1 ms
-Reloading save slot metadata took 9 ms
-Dump and make backups took 30 ms
-Cleaning cache took 0 ms
-Making clean stores took 0 ms
-Initial gc took 32 ms
+Early init took 0.08s
+Loading error handling took 0.28s
+Loading script took 4.10s
+Loading save slot metadata took 0.51s
+Loading persistent took 0.00s
+ - Init at game/gui.rpy:11 took 0.28146 s.
+Running init code took 0.69s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.12s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\potat\\AppData\\Roaming/RenPy/backups\\Sapphos_stories':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 2 ms
-Init translation took 0 ms
-Cleaning stores took 0 ms
-Load screen analysis took 13 ms
-Analyze screens took 1 ms
-Save screen analysis took 0 ms
-Save pyanalysis took 0 ms
-Save bytecode took 0 ms
-Running _start took 1 ms
-Interface start took 833 ms
+Creating interface object took 0.10s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.06s
+Save screen analysis took 0.02s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 1.31s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD RadeonT 780M'
-Version: '4.6.0 Compatibility Profile Context 24.10.39.05.241016'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 2880, 'current_h': 1800, 'refresh_rate': 120, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(540, 960) physical=(2880, 1755) drawable=(2880, 1755)
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Xe Graphics'
+Version: b'4.6.0 - Build 31.0.101.5333'
+Display Info: None
+Screen sizes: virtual=(540, 960) physical=(2880, 1659) drawable=(2880, 1659)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(540, 960) physical=(2880, 1755) drawable=(2880, 1755)
+Screen sizes: virtual=(540, 960) physical=(2880, 1659) drawable=(2880, 1659)
 Maximum texture size: 4096x4096

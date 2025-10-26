@@ -2,9 +2,30 @@
 errors listed below, and try again.
 
 
+<<<<<<< Updated upstream
 File "game/screens.rpy", line 213: 'background' is not a keyword argument or valid child of the screen statement.
     background Image("gui/button/choice_background.png", xalign=0.5, yalign=1.0)
               ^
 
 Ren'Py Version: Ren'Py 8.4.0.25071206
 Sat Oct 25 20:31:47 2025
+=======
+File "game/script.rpy", line 597: end of line expected.
+    show char_sigrid_smile.png
+                          ^
+
+File "game/script.rpy", line 788: end of line expected.
+    show char_lyra_neutral.png
+                          ^
+
+File "game/script.rpy", line 825: end of line expected.
+    show char_lyra_neutral.png
+                          ^
+
+File "game/script.rpy", line 846: end of line expected.
+    show char_veila_smile.png 
+                         ^
+
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Fri Oct 24 22:45:44 2025
+>>>>>>> Stashed changes
