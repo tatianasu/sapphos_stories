@@ -2,30 +2,21 @@
 errors listed below, and try again.
 
 
-<<<<<<< Updated upstream
-File "game/screens.rpy", line 213: 'background' is not a keyword argument or valid child of the screen statement.
-    background Image("gui/button/choice_background.png", xalign=0.5, yalign=1.0)
-              ^
+File "game/script.rpy", line 56: end of line expected.
+    Bard "Обряд, переживший века.
+                            ^
+
+File "game/script.rpy", line 63: end of line expected.
+    Bard "Вместо медовой сладости яблоко принесло Белоснежке тень подозрений.
+                                                    ^
+
+File "game/script.rpy", line 152: expected statement.
+    "Поднял на нее уставшие, выцветшие глаза.
+                                     ^
+
+File "game/script.rpy", line 506: end of line expected.
+    GG_name "Ты делаешь мне одолжение под видом помощи?
+                                            ^
 
 Ren'Py Version: Ren'Py 8.4.0.25071206
-Sat Oct 25 20:31:47 2025
-=======
-File "game/script.rpy", line 597: end of line expected.
-    show char_sigrid_smile.png
-                          ^
-
-File "game/script.rpy", line 788: end of line expected.
-    show char_lyra_neutral.png
-                          ^
-
-File "game/script.rpy", line 825: end of line expected.
-    show char_lyra_neutral.png
-                          ^
-
-File "game/script.rpy", line 846: end of line expected.
-    show char_veila_smile.png 
-                         ^
-
-Ren'Py Version: Ren'Py 8.3.7.25031702
-Fri Oct 24 22:45:44 2025
->>>>>>> Stashed changes
+Mon Oct 27 17:55:38 2025
