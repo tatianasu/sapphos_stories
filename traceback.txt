@@ -1,40 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 36, in script
-    play music musica
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/script.rpy", line 36, in <module>
-    play music musica
-NameError: name 'musica' is not defined
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\potat\\OneDrive\\Desktop\\Игры)\\test_game\\Sapphos_stories\\game\\saves\\persistent.1762355996.tmp'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 36, in script
-    play music musica
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\ast.py", line 1987, in execute
-    self.call("execute")
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\ast.py", line 1966, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 36, in <module>
-    play music musica
-NameError: name 'musica' is not defined
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\main.py", line 666, in main
+    renpy.persistent.update(True)
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\persistent.py", line 434, in update
+    save()
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\persistent.py", line 456, in save
+    renpy.loadsave.location.save_persistent(compressed)
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\savelocation.py", line 622, in save_persistent
+    l.save_persistent(data)
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\savelocation.py", line 426, in save_persistent
+    with open(fn_tmp, "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\potat\\OneDrive\\Desktop\\Игры)\\test_game\\Sapphos_stories\\game\\saves\\persistent.1762355996.tmp'
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 Sapphos_stories 1.0
-Sat Oct 25 02:44:51 2025
+Wed Nov  5 18:22:43 2025
