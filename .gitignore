@@ -9,3 +9,5 @@ game/saves
 log.txt
 game/cache
 game/saves
+game/cache
+game/options.rpyc
