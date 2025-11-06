@@ -4,7 +4,7 @@
 define Lira = Character('Эйлин', color="#312940")
 define King = Character('Король', color="#312940")
 define Sigrid = Character('Сигрид', color="#312940")
-define Bard = Character('Бардесса', color="#312940")
+define Bard = Character('Бардесса', color="#312940", window_background = Frame("gui/textbox.png") )
 define Agness = Character('Агнесса', color="#312940")
 define Veila = Character('Вейла', color="#312940")
 default GG_name = Character('[main_charecter_name]', color="#312940")
@@ -23,6 +23,8 @@ default sword = 0
 default timerz = 5
 init -1:
     $ off_on = False
+
+default menuset = set()
 
 #Баллы отношений 
 default sigrid_fav = 0
@@ -119,6 +121,9 @@ label scene_1:
 
     
     menu:
+        set menuset
+        "Where should I go?"
+        
         "Потревожить короля":
             GG_name "Ваше Высочество, мне передали, что Вы меня ждете."
             jump scene_1_add1

@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Инициализация
 ################################################################################
 
@@ -109,7 +109,7 @@ define gui.textbox_yalign = 0.65
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
 define gui.name_xpos = 102
-define gui.name_ypos = -40
+define gui.name_ypos = 10
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
@@ -133,8 +133,8 @@ define gui.namebox_tile = False
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 38
-define gui.dialogue_ypos = 10
+define gui.dialogue_xpos = 20
+define gui.dialogue_ypos = 22
 
 ## Максимальная ширина текста диалога в пикселях.
 define gui.dialogue_width = 480
@@ -383,7 +383,7 @@ define gui.nvl_height = None
 
 ## Интервал между строчками в режиме NVL, если gui.nvl_height имеет значение
 ## None, а также между строчками и меню режима NVL.
-define gui.nvl_spacing = 5
+define gui.nvl_spacing = 4
 
 ## Местоположение, ширина и выравнивание заголовка, показывающего имя говорящего
 ## персонажа.
@@ -393,16 +393,16 @@ define gui.nvl_name_width = 64
 define gui.nvl_name_xalign = 1.0
 
 ## Местоположение, ширина и выравнивание диалогового текста.
-define gui.nvl_text_xpos = 0.5
+define gui.nvl_text_xpos = 220
 define gui.nvl_text_ypos = 0.5
-define gui.nvl_text_width = 300
+define gui.nvl_text_width = 400
 define gui.nvl_text_xalign = 0.0
 
 ## Местоположение, ширина и выравнивание текста nvl_thought (текст от лица
 ## персонажа nvl_narrator).
 define gui.nvl_thought_xpos = 0.5
 define gui.nvl_thought_ypos = 0.45
-define gui.nvl_thought_width = 480
+define gui.nvl_thought_width = 400
 define gui.nvl_thought_xalign = 0.5
 
 ## Местоположение кнопок меню NVL.
@@ -438,11 +438,11 @@ init python:
     def small():
 
         ## Размеры шрифтов.
-        gui.text_size = 13
+        gui.text_size = 14
         gui.name_text_size = 16
         gui.notify_text_size = 11
         gui.interface_text_size = 13
-        gui.button_text_size = 13
+        gui.button_texААt_size = 13
         gui.label_text_size = 15
 
         ## Регулирует местоположение текстового окна.
@@ -475,12 +475,12 @@ init python:
         gui.nvl_name_width = 129
         gui.nvl_name_xpos = 138
 
-        gui.nvl_text_width = 387
-        gui.nvl_text_xpos = 146
+        gui.nvl_text_width = 250
+        gui.nvl_text_xpos = 100
         gui.nvl_text_ypos = 3
 
-        gui.nvl_thought_width = 524
-        gui.nvl_thought_xpos = 9
+        gui.nvl_thought_width = 100
+        gui.nvl_thought_xpos = 100
 
         gui.nvl_button_width = 524
         gui.nvl_button_xpos = 9

@@ -95,16 +95,20 @@ style frame:
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 screen say(who, what):
+    $ clean = renpy.filter_text_tags(what, allow=[])
+    $ tb = "gui/textbox_size1.png" if len(clean) <= 100 else "gui/textbox_size2.png"
 
     window:
         id "window"
+        xalign 0.5
+        xfill True
+        yalign gui.textbox_yalign
+        ysize gui.textbox_height
+        # Динамический фон
+        background Image(tb, xalign=0.5, yalign=1.0)
 
         if who is not None:
-
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who"
+            text who id "who"
 
         text what id "what"
 
@@ -1301,6 +1305,22 @@ style notify_frame:
 style notify_text:
     properties gui.text_properties("notify")
 
+## мой код 
+
+screen my_custom_menu(variants):
+    $ cnt = len(variants)
+    if cnt == 2:
+        $ tb = "#111" # Можешь менять на файл-картинку
+    elif cnt == 3:
+        $ tb = "#181" # Можешь менять на файл-картинку
+    else:
+        $ tb = "#333"
+    window:
+        background Frame(tb, 10,10)
+        vbox:
+            for text, code in variants:
+                textbutton text action [SetVariable("player_choice", code), Return()]
+
 
 ## Экран NVL ###################################################################
 ##
@@ -1311,35 +1331,42 @@ style notify_text:
 
 screen nvl(dialogue, items=None):
 
+    $ clean = renpy.filter_text_tags(dialogue, allow=[])
+
+    if len(clean) >= 150:
+        $ tb = "gui/NVL_1.png"
+    elif len(clean) >= 93:
+        $ tb = "gui/NVL_2.png"
+    elif len(clean) >= 30:
+        $ tb = "gui/NVL_3.png"
+    else:
+        $ tb = "gui/NVL_4.png"  
+
     window:
-        style "nvl_window"
+        id "nvl_window"
+        yalign 0.5
+        background Image(tb, xalign=0.5, yalign=1)
 
         has vbox:
             spacing gui.nvl_spacing
 
         ## Показывает диалог или в vpgrid, или в vbox.
         if gui.nvl_height:
-
             vpgrid:
                 cols 1
                 yinitial 1.0
-
                 use nvl_dialogue(dialogue)
-
         else:
-
             use nvl_dialogue(dialogue)
 
         ## Показывает меню, если есть. Меню может показываться некорректно, если
         ## config.narrator_menu установлено на True.
         for i in items:
-
             textbutton i.caption:
                 action i.action
                 style "nvl_button"
 
-    add SideImage() xalign 0.0 yalign 1.0
-
+    add SideImage() xalign 0.0 yalign 7
 
 screen nvl_dialogue(dialogue):
 
