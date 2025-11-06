@@ -5,3 +5,6 @@ game/cache/
 *.rpymc
 log.txt
 traceback.txt
+game/saves
+log.txt
+game/cache
