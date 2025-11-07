@@ -1,13 +1,13 @@
 # Вы можете расположить сценарий своей игры в этом файле.
 
 # Определение персонажей игры.
-define Lira = Character('Эйлин', color="#312940")
-define King = Character('Король', color="#312940")
-define Sigrid = Character('Сигрид', color="#312940")
-define Bard = Character('Бардесса', color="#312940", window_background = Frame("gui/textbox.png") )
-define Agness = Character('Агнесса', color="#312940")
-define Veila = Character('Вейла', color="#312940")
-default GG_name = Character('[main_charecter_name]', color="#312940")
+define Lira = Character('Эйлин', color="#ffffff")
+define King = Character('Король', color="#f6f4f9")
+define Sigrid = Character('Сигрид', color="#f7f7f7")
+define Bard = Character('Бардесса', color="#ffffff", window_background = Frame("gui/textbox.png") )
+define Agness = Character('Агнесса', color="#ffffff")
+define Veila = Character('Вейла', color="#ffffff")
+default GG_name = Character('[main_charecter_name]', color="#ffffff")
 define narrator = nvl_narrator
 
 define audio.bard_music = "audio/вступительная.ogg"
@@ -121,9 +121,6 @@ label scene_1:
 
     
     menu:
-        set menuset
-        "Where should I go?"
-        
         "Потревожить короля":
             GG_name "Ваше Высочество, мне передали, что Вы меня ждете."
             jump scene_1_add1

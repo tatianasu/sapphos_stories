@@ -96,16 +96,17 @@ style frame:
 
 screen say(who, what):
     $ clean = renpy.filter_text_tags(what, allow=[])
-    $ tb = "gui/textbox_size1.png" if len(clean) <= 100 else "gui/textbox_size2.png"
+    $ tb = "gui/textbox_size1.png" if len(clean) <= 140 else "gui/textbox_size2.png"
 
     window:
         id "window"
         xalign 0.5
         xfill True
-        yalign gui.textbox_yalign
+
+        ypos 450 
         ysize gui.textbox_height
         # Динамический фон
-        background Image(tb, xalign=0.5, yalign=1.0)
+        background Image(tb, xalign=0.5, yalign=0.0)
 
         if who is not None:
             text who id "who"
@@ -135,11 +136,13 @@ style namebox_label is say_label
 
 style window:
     xalign 0.5
+    xsize 700
+    spacing 1
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox2.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox_size1.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -1327,26 +1330,60 @@ screen my_custom_menu(variants):
 ## Этот экран используется в диалогах и меню режима NVL.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#nvl
+init python:
+    import re
 
+    def extract_russian_text(data):
+        """
+        Рекурсивно извлекает русские фразы из данных (кортежей, списков, словарей).
+        """
+        if isinstance(data, str):
+            # Ищем всю русскую фразу (слова, пробелы, знаки препинания и тире)
+            match = re.search(r'[а-яА-Я\s\.,?!-]+', data)
+            if match:
+                return match.group(0)  # Возвращаем всю найденную русскую фразу
+            else:
+                return None
+        elif isinstance(data, (list, tuple)):
+            for item in data:
+                result = extract_russian_text(item)
+                if result:
+                    return result
+        elif isinstance(data, dict):
+            for key, value in data.items():
+                result = extract_russian_text(value)
+                if result:
+                    return result
+        return None
 
 screen nvl(dialogue, items=None):
-
-    $ clean = renpy.filter_text_tags(dialogue, allow=[])
-
-    if len(clean) >= 150:
-        $ tb = "gui/NVL_1.png"
-    elif len(clean) >= 93:
-        $ tb = "gui/NVL_2.png"
-    elif len(clean) >= 30:
-        $ tb = "gui/NVL_3.png"
+    $ clean = renpy.filter_text_tags(dialogue, allow=[]).strip()
+    $ extracted_text = extract_russian_text(dialogue)  # Извлекаем русский текст
+    $ print(extracted_text)
+    $ print(len(extracted_text))
+    if extracted_text:
+        $ m = len(extracted_text)  # Если текст найден, вычисляем длину
     else:
-        $ tb = "gui/NVL_4.png"  
+        $ m = 0  # Если текст не найден, присваиваем m значение 0
+
+    if m >= 150:
+        $ tb = "gui/NVL_1.png"
+    elif 93 <= m < 150:
+        $ tb = "gui/NVL_2.png"
+    elif 30 <= m < 93:
+        $ tb = "gui/NVL_3.png"
+    elif 1 <= m < 40:
+        $ tb = "gui/NVL_4.png"
+    else:
+        $ tb = "gui/NVL_4.png"  # Обработка случая, когда m <= 0
 
     window:
         id "nvl_window"
-        yalign 0.5
-        background Image(tb, xalign=0.5, yalign=1)
 
+        ypos 530 
+
+        background Image(tb, xalign=0.5, yalign=1)
+        
         has vbox:
             spacing gui.nvl_spacing
 

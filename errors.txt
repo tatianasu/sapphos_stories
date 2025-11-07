@@ -2,21 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 56: end of line expected.
-    Bard "Обряд, переживший века.
-                            ^
+File "game/screens.rpy", line 1362: 'print' is not a keyword argument or valid child of the screen statement.
+    print(dialogue)
+         ^
 
-File "game/script.rpy", line 63: end of line expected.
-    Bard "Вместо медовой сладости яблоко принесло Белоснежке тень подозрений.
-                                                    ^
-
-File "game/script.rpy", line 152: expected statement.
-    "Поднял на нее уставшие, выцветшие глаза.
-                                     ^
-
-File "game/script.rpy", line 506: end of line expected.
-    GG_name "Ты делаешь мне одолжение под видом помощи?
-                                            ^
-
-Ren'Py Version: Ren'Py 8.4.0.25071206
-Mon Oct 27 17:55:38 2025
+Ren'Py Version: Ren'Py 8.3.7.25031702
+Fri Nov  7 03:42:36 2025

@@ -33,7 +33,7 @@ define gui.idle_color = '#707070'
 
 ## Small_color используется в маленьком тексте, который должен быть ярче/темнее,
 ## для того, чтобы выделяться.
-define gui.idle_small_color = '#606060'
+define gui.idle_small_color = '#c1c1c1'
 
 ## Цвет, используемых в кнопках и панелях, когда они наведены.
 define gui.hover_color = '#660066'
@@ -71,7 +71,7 @@ define gui.interface_text_font = "DejaVuSans.ttf"
 define gui.text_size = 23
 
 ## Размер имён персонажей.
-define gui.name_text_size = 18
+define gui.name_text_size = 25
 
 ## Размер текста в пользовательском интерфейсе.
 define gui.interface_text_size = 10
@@ -98,28 +98,28 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## Эти переменные контролируют, как диалог появляется на отдельной строчке.
 
 ## Высота текстового окна, содержащего диалог.
-define gui.textbox_height = 0.1
+define gui.textbox_height = 0.2
 
 ## Местоположение текстового окна по вертикали экрана. 0.0 — верх, 0.5 — центр и
 ## 1.0 — низ.
-define gui.textbox_yalign = 0.65
+define gui.textbox_yalign = 0.5
 
 
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
-define gui.name_xpos = 102
-define gui.name_ypos = 10
+define gui.name_xpos = 0.5
+define gui.name_ypos = 0.5
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
 ## выравнивания.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.21
 
 ## Ширина, высота и границы окна, содержащего имя персонажа или None, для
 ## автоматической размерки.
 define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_height = 30
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
@@ -133,16 +133,16 @@ define gui.namebox_tile = False
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 20
-define gui.dialogue_ypos = 22
+define gui.dialogue_xpos = 0.5
+define gui.dialogue_ypos = 0.7
 
 ## Максимальная ширина текста диалога в пикселях.
-define gui.dialogue_width = 480
+define gui.dialogue_width = 440
 
 ## Горизонтальное выравнивание текста диалога. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
 ## выравнивания.
-define gui.dialogue_text_xalign = 0.0
+define gui.dialogue_text_xalign = 0.5
 
 
 ## Кнопки ######################################################################
@@ -176,7 +176,7 @@ define gui.button_text_insensitive_color = gui.insensitive_color
 
 ## Горизонтальное выравнивание текста в кнопке. (0.0 — лево, 0.5 — по центру,
 ## 1.0 — право).
-define gui.button_text_xalign = 0.0
+define gui.button_text_xalign = 0.5
 
 
 ## Эти переменные переписывают настройки различных видов кнопок. Пожалуйста,
@@ -361,7 +361,7 @@ define gui.history_name_xalign = 1.0
 
 ## Местоположение, ширина и выравнивание диалогового текста.
 define gui.history_text_xpos = 72
-define gui.history_text_ypos = 1
+define gui.history_text_ypos = 450
 define gui.history_text_width = 313
 define gui.history_text_xalign = 0.0
 
@@ -387,22 +387,22 @@ define gui.nvl_spacing = 4
 
 ## Местоположение, ширина и выравнивание заголовка, показывающего имя говорящего
 ## персонажа.
-define gui.nvl_name_xpos = 182
-define gui.nvl_name_ypos = 0
+define gui.nvl_name_xpos = 400
+define gui.nvl_name_ypos = 40
 define gui.nvl_name_width = 64
-define gui.nvl_name_xalign = 1.0
+define gui.nvl_name_xalign = 20
 
 ## Местоположение, ширина и выравнивание диалогового текста.
 define gui.nvl_text_xpos = 220
 define gui.nvl_text_ypos = 0.5
-define gui.nvl_text_width = 400
+define gui.nvl_text_width = 550
 define gui.nvl_text_xalign = 0.0
 
 ## Местоположение, ширина и выравнивание текста nvl_thought (текст от лица
 ## персонажа nvl_narrator).
 define gui.nvl_thought_xpos = 0.5
-define gui.nvl_thought_ypos = 0.45
-define gui.nvl_thought_width = 400
+define gui.nvl_thought_ypos = 0.1
+define gui.nvl_thought_width = 420
 define gui.nvl_thought_xalign = 0.5
 
 ## Местоположение кнопок меню NVL.
@@ -447,8 +447,8 @@ init python:
 
         ## Регулирует местоположение текстового окна.
         gui.textbox_height = 102
-        gui.name_xpos = 34
-        gui.dialogue_xpos = 38
+        gui.name_xpos = 110
+        gui.dialogue_xpos = 400
         gui.dialogue_width = 465
 
         ## Изменяет размеры и интервалы различных объектов.

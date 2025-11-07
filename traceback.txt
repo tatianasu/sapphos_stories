@@ -1,26 +1,58 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\potat\\OneDrive\\Desktop\\Игры)\\test_game\\Sapphos_stories\\game\\saves\\persistent.1762355996.tmp'
+  File "game/script.rpy", line 159, in script
+    "Глаза старика."
+  File "renpy/common/00nvl_mode.rpy", line 395, in do_display
+    renpy.display_say(
+  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
+    return __nvl_show_screen("nvl", items=[ ])
+  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
+    return renpy.get_widget(screen_name, "what", config.nvl_layer)
+  File "game/screens.rpy", line 1359, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1359, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1364, in execute
+    if m >= 150:
+  File "game/screens.rpy", line 1364, in <module>
+    if m >= 150:
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\main.py", line 666, in main
-    renpy.persistent.update(True)
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\persistent.py", line 434, in update
-    save()
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\persistent.py", line 456, in save
-    renpy.loadsave.location.save_persistent(compressed)
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\savelocation.py", line 622, in save_persistent
-    l.save_persistent(data)
-  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\savelocation.py", line 426, in save_persistent
-    with open(fn_tmp, "wb") as f:
-FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\potat\\OneDrive\\Desktop\\Игры)\\test_game\\Sapphos_stories\\game\\saves\\persistent.1762355996.tmp'
+  File "game/script.rpy", line 159, in script
+    "Глаза старика."
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\ast.py", line 623, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\character.py", line 1471, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/common/00nvl_mode.rpy", line 395, in do_display
+    renpy.display_say(
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\character.py", line 735, in display_say
+    what_text = show_function(who, what_string, **show_args)
+  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
+    return __nvl_show_screen("nvl", items=[ ])
+  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
+    return renpy.get_widget(screen_name, "what", config.nvl_layer)
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\display\screen.py", line 1541, in get_displayable
+    screen.update()
+  File "C:\Users\potat\OneDrive\Desktop\Игры)\renpy-8.3.7-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 1359, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1359, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1364, in execute
+    if m >= 150:
+  File "game/screens.rpy", line 1364, in <module>
+    if m >= 150:
+TypeError: '>=' not supported between instances of 'NoneType' and 'int'
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 Sapphos_stories 1.0
-Wed Nov  5 18:22:43 2025
+Fri Nov  7 03:36:28 2025
