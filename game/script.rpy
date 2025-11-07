@@ -96,7 +96,8 @@ label scene_1:
 
 
     python:
-        main_charecter_name = renpy.input(("Введите ваше имя"))
+        default_name = "Лира"
+        main_charecter_name = renpy.input(("Введите ваше имя"), default=default_name)
 
     Bard "[main_charecter_name]. Она пройдет этот путь вместе с принцессой и докажет свою преданность либо Короне, либо Чести Рыцаря."
 
